@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EvoSattva Habits of Mind — EvoPaideia</title>
+  <meta name="description" content="Twelve named habits of thinking, relating, and creating — the seed vocabulary of EvoPaideia's developmental education. Introduced once, practised for life.">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="canonical" href="https://evopaideia.org/habits/">
+  <link rel="preconnect" href="https://fonts.bunny.net">
+  <link rel="stylesheet" href="https://fonts.bunny.net/css?family=atkinson-hyperlegible:400,400i,700,700i|cormorant-garamond:400,400i,600,700&display=swap">
+  <link rel="stylesheet" href="/assets/style.css">
+  <meta property="og:title" content="EvoSattva Habits of Mind — EvoPaideia">
+  <meta property="og:description" content="Twelve named habits of thinking, relating, and creating — introduced once, practised for life.">
+  <meta property="og:url" content="https://evopaideia.org/habits/">
+  <meta property="og:type" content="article">
+  <style>
+    .family-head { display: flex; align-items: baseline; gap: 0.75rem; margin-top: 2.5rem; }
+    .family-head h3 { margin: 0; font-size: 1.35rem; color: var(--wine); }
+    .family-head .family-quality { font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--grey); }
+    .habit-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin: 1.25rem 0 0; }
+    .habit { background: var(--paper); border: 1px solid var(--grey-light); border-left: 3px solid var(--wine-light); border-radius: var(--radius); padding: 1.2rem 1.2rem 1.1rem; }
+    .habit .habit-no { font-family: var(--serif); font-size: 0.85rem; color: var(--gold); font-weight: 700; display: block; }
+    .habit h4 { font-family: var(--serif); font-size: 1.15rem; color: var(--wine-deep); margin: 0.15rem 0 0.4rem; }
+    .habit p { font-size: 0.92rem; color: var(--grey); line-height: 1.55; margin: 0; }
+    .lens-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 1.75rem 0; }
+    .lens { text-align: center; padding: 1.2rem 0.8rem; background: var(--paper); border: 1px solid var(--grey-light); border-radius: var(--radius); }
+    .lens .lens-name { font-family: var(--serif); font-size: 1.2rem; font-weight: 700; color: var(--wine); display: block; }
+    .lens .lens-de { font-size: 0.75rem; color: var(--grey); text-transform: uppercase; letter-spacing: 0.06em; display: block; margin: 0.15rem 0 0.4rem; }
+    .lens p { font-size: 0.85rem; color: var(--grey); margin: 0; line-height: 1.5; }
+    .container-card { background: var(--paper); border: 1px solid var(--grey-light); border-radius: var(--radius); padding: 1.75rem 1.75rem 1.5rem; margin: 1.25rem 0; }
+    .container-card h3 { margin: 0 0 0.5rem; color: var(--wine); font-size: 1.3rem; }
+    .container-card .container-tag { display: inline-block; background: var(--wine); color: #fff; font-size: 0.7rem; font-weight: 600; padding: 0.2em 0.65em; border-radius: 3px; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 0.7rem; }
+    .stands-list { list-style: none; padding: 0; margin: 1rem 0; }
+    .stands-list li { padding-left: 1.4rem; position: relative; margin-bottom: 0.55rem; }
+    .stands-list li::before { content: "—"; position: absolute; left: 0; color: var(--gold); }
+    .honest { border: 1px solid var(--grey-light); border-left: 4px solid var(--gold); background: var(--paper-warm); border-radius: 0 var(--radius) var(--radius) 0; padding: 1.2rem 1.5rem; margin: 1.5rem 0; font-size: 0.95rem; color: var(--ink-soft); }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="shell-wide nav-inner">
+      <a class="brand" href="/">
+        <span class="brand-mark" aria-hidden="true"></span>
+        EvoPaideia
+      </a>
+      <div class="nav-links">
+        <a href="/#roots">Roots</a>
+        <a href="/#athena">Athena</a>
+        <a href="/#fields">Fields</a>
+        <a href="/habits/" style="color: var(--wine); font-weight: 600;">Habits of Mind</a>
+        <a href="/#newsletter">Stay in touch</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-rings" aria-hidden="true">
+      <div class="ring ring-1"></div>
+      <div class="ring ring-2"></div>
+      <div class="ring ring-3"></div>
+      <div class="ring ring-4"></div>
+      <div class="ring ring-5"></div>
+    </div>
+    <div class="shell">
+      <span class="eyebrow">EvoPaideia &middot; First Patterns &middot; seed set v0.2</span>
+      <h1>The EvoSattva Habits of Mind</h1>
+      <p class="lede">
+        Twelve named habits of thinking, relating, and creating &mdash;
+        introduced once, practised for life. The seed vocabulary of a
+        developmental education.
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-wine" href="#habits">The twelve habits</a>
+        <a class="btn btn-outline" href="#containers">The two containers</a>
+        <a class="btn btn-soft" href="https://evobiosys.org/pitch/evopaideia/" target="_blank" rel="noopener">The pitch &rarr;</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Why named habits -->
+  <section id="why">
+    <div class="shell">
+      <h2>Why a named vocabulary</h2>
+      <p style="color: var(--grey); font-style: italic; margin-bottom: 1.5rem;">A habit you can name is a habit you can practise, score, and carry across domains</p>
+      <p>
+        The founder studied at Minerva University, whose curriculum demonstrated
+        something rare in education: that a <strong>finite, named vocabulary of
+        thinking-moves</strong> can be explicitly taught in one foundational year,
+        scored every time a learner applies one, and then tracked as those moves
+        transfer &mdash; near and far &mdash; into every later context. The habit,
+        not the course, becomes the unit of learning.
+      </p>
+      <p>
+        EvoPaideia keeps that structural insight and re-derives the vocabulary
+        from a different root. Minerva's habits cover analytical and communicative
+        intelligence &mdash; roughly one third of what a whole human being needs.
+        The EvoSattva Habits grow instead from the three qualities the curriculum
+        exists to cultivate:
+      </p>
+      <div class="pillar-grid">
+        <div class="pillar">
+          <span class="pillar-icon">◎</span>
+          <h3>Polymath</h3>
+          <p><strong>Polymathic Intelligence</strong> &mdash; sense-making habits: patterns, evidence, systems, dialectics.</p>
+        </div>
+        <div class="pillar">
+          <span class="pillar-icon">○</span>
+          <h3>Bodhisattva</h3>
+          <p><strong>Interoperable Compassion</strong> &mdash; relational and inner habits: attunement, perspective, shared fields, shadow.</p>
+        </div>
+        <div class="pillar">
+          <span class="pillar-icon">●</span>
+          <h3>World-Creator</h3>
+          <p><strong>World-Creation Agency</strong> &mdash; enactment habits: vision, co-creation, shipping.</p>
+        </div>
+      </div>
+      <blockquote>
+        <p>An Evo-sattva &mdash; an evolving bodhisattva &mdash; thinks like a polymath,
+        relates like a bodhisattva, and builds like a world-creator. The twelve habits
+        make that aspiration practicable.</p>
+      </blockquote>
+    </div>
+  </section>
+
+  <div class="ring-divider" aria-hidden="true">
+    <span class="ring-dot"></span><span class="ring-dot"></span><span class="ring-dot"></span><span class="ring-dot"></span><span class="ring-dot"></span>
+  </div>
+
+  <!-- The twelve habits -->
+  <section class="alt" id="habits">
+    <div class="shell">
+      <h2>The Twelve Habits</h2>
+      <p style="color: var(--grey); font-style: italic;">Seed set &mdash; a starting vocabulary, offered for practice and revision, not carved in stone</p>
+
+      <div class="family-head">
+        <h3>Polymathic Intelligence</h3>
+        <span class="family-quality">the Polymath quality</span>
+      </div>
+      <div class="habit-grid">
+        <div class="habit">
+          <span class="habit-no">01</span>
+          <h4>First Patterns</h4>
+          <p>Recognize the same deep pattern across distant domains and carry it over deliberately. The engine of polymathic learning &mdash; and this project's namesake.</p>
+        </div>
+        <div class="habit">
+          <span class="habit-no">02</span>
+          <h4>Soul of the Domain</h4>
+          <p>Enter any field through its soul: the defining lore, the exemplary practitioners, the tacit craft. Domains met as living cultures, not topic lists.</p>
+        </div>
+        <div class="habit">
+          <span class="habit-no">03</span>
+          <h4>Evidence Craft</h4>
+          <p>Structure claims, grade sources, ask what would prove you wrong. The epistemic immune system &mdash; doubly needed in an AI-saturated infosphere.</p>
+        </div>
+        <div class="habit">
+          <span class="habit-no">04</span>
+          <h4>System Sight</h4>
+          <p>See wholes: emergence, levels, feedback, networks &mdash; and systems as alive and participatory, not only as diagrams to stand outside of.</p>
+        </div>
+        <div class="habit">
+          <span class="habit-no">05</span>
+          <h4>Dialectical Lens</h4>
+          <p>Move thought through process, context, relationship, and transformation &mdash; after Otto Laske's dialectical thought forms. The habit that deepens all the others.</p>
+        </div>
+      </div>
+
+      <div class="family-head">
+        <h3>Interoperable Compassion</h3>
+        <span class="family-quality">the Bodhisattva quality</span>
+      </div>
+      <div class="habit-grid">
+        <div class="habit">
+          <span class="habit-no">06</span>
+          <h4>Self-Attunement</h4>
+          <p>Track your own state, regulate, choose your response. Nervous-system literacy as the ground every other habit stands on.</p>
+        </div>
+        <div class="habit">
+          <span class="habit-no">07</span>
+          <h4>Perspective Interoperability</h4>
+          <p>Translate fluently between worldviews, developmental stages, and personality structures. Meet people where they are &mdash; and be understood there.</p>
+        </div>
+        <div class="habit">
+          <span class="habit-no">08</span>
+          <h4>We-Space</h4>
+          <p>Sense, hold, and repair shared relational fields. Presence in groups practised as a craft &mdash; the clearest thing no conventional curriculum teaches.</p>
+        </div>
+        <div class="habit">
+          <span class="habit-no">09</span>
+          <h4>Shadow Integration</h4>
+          <p>Notice projection, work with triggers, re-own what was pushed away. Ethics taught to the psyche that does the framing, not only to the mind that argues it.</p>
+        </div>
+      </div>
+
+      <div class="family-head">
+        <h3>World-Creation Agency</h3>
+        <span class="family-quality">the World-Creator quality</span>
+      </div>
+      <div class="habit-grid">
+        <div class="habit">
+          <span class="habit-no">10</span>
+          <h4>Vision Casting</h4>
+          <p>Compress an intent into a vivid core &mdash; then unfold it, fractally, into artifacts: a page, a prototype, a program, a place.</p>
+        </div>
+        <div class="habit">
+          <span class="habit-no">11</span>
+          <h4>Co-Creation with AI</h4>
+          <p>Specify, delegate, verify, and curate work done with non-human intelligence. Judgment and taste under abundance &mdash; the habit that outlives every toolchain.</p>
+        </div>
+        <div class="habit">
+          <span class="habit-no">12</span>
+          <h4>Idea to Life</h4>
+          <p>Carry an insight through prototype to a thing that exists in the world &mdash; and holds. Making as the completion of thinking.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ring-divider" aria-hidden="true">
+    <span class="ring-dot"></span><span class="ring-dot"></span><span class="ring-dot"></span><span class="ring-dot"></span><span class="ring-dot"></span>
+  </div>
+
+  <!-- Dialectical meta-layer -->
+  <section id="dialectic">
+    <div class="shell">
+      <h2>The Dialectical Meta-Layer</h2>
+      <p style="color: var(--grey); font-style: italic; margin-bottom: 1.5rem;">Four movements of thought that deepen every habit &mdash; after Otto Laske</p>
+      <p>
+        Above the twelve habits sits one more layer &mdash; not a thirteenth habit but a
+        way of moving through all of them. It draws directly on <strong>Otto Laske's
+        dialectical thought forms</strong>: four classes of movement that distinguish
+        thinking <em>about</em> a fixed world from thinking <em>with</em> a world in
+        transformation.
+      </p>
+      <div class="lens-row">
+        <div class="lens">
+          <span class="lens-name">Process</span>
+          <span class="lens-de">Prozess</span>
+          <p>What is this in the middle of becoming? Emergence and unceasing change.</p>
+        </div>
+        <div class="lens">
+          <span class="lens-name">Context</span>
+          <span class="lens-de">Kontext</span>
+          <p>What larger structure holds this? Embeddedness and stable form.</p>
+        </div>
+        <div class="lens">
+          <span class="lens-name">Relationship</span>
+          <span class="lens-de">Beziehung</span>
+          <p>What does this share ground with? Interdependence and common ground.</p>
+        </div>
+        <div class="lens">
+          <span class="lens-name">Transformation</span>
+          <span class="lens-de">Transformation</span>
+          <p>How does the whole system change &mdash; including its limits? Development itself.</p>
+        </div>
+      </div>
+      <p>
+        In practice: any habit, applied to any material, can be pushed through the four
+        movements &mdash; and the <em>fluidity</em> of that movement is the developmental
+        signal. The same analysis performed logically earns mastery; performed
+        dialectically it earns depth. Daily <strong>MindOpener</strong> prompts train
+        exactly one movement at a time: <em>&ldquo;you have described the structure &mdash;
+        now show what it is becoming.&rdquo;</em>
+      </p>
+      <p>
+        This layer is what makes EvoPaideia post-conventional rather than
+        better-conventional: critical thinking taught at the formal-logical altitude
+        sharpens the mind inside its frame; dialectical practice teaches the frame
+        to move.
+      </p>
+    </div>
+  </section>
+
+  <div class="ring-divider" aria-hidden="true">
+    <span class="ring-dot"></span><span class="ring-dot"></span><span class="ring-dot"></span><span class="ring-dot"></span><span class="ring-dot"></span>
+  </div>
+
+  <!-- Scoring & containers -->
+  <section class="alt" id="containers">
+    <div class="shell">
+      <h2>How the Habits Travel</h2>
+      <p style="color: var(--grey); font-style: italic; margin-bottom: 1.5rem;">Introduced once &mdash; then scored wherever life applies them</p>
+      <p>
+        Each habit is <strong>introduced</strong> in the foundational year, then
+        <strong>re-scored every time it shows up</strong> in later work &mdash; the
+        farther from its home domain, the more it counts. Assessment matures over the
+        whole arc rather than closing at the end of a course: the habit vocabulary is
+        the spine, and each container of the
+        <a href="https://evobiosys.org/pitch/evopaideia/" target="_blank" rel="noopener">container ladder</a>
+        is a new context in which the same twelve habits are practised at greater depth.
+      </p>
+
+      <div class="container-card">
+        <span class="container-tag">Container &middot; the year on</span>
+        <h3>One year &mdash; sabbatical, gap year, year on</h3>
+        <p>
+          The First-Patterns year standing alone as a complete experience: all twelve
+          habits introduced, practised, and taken home. A <em>year on</em> rather than a
+          year off &mdash; for gap-year students, sabbatical professionals, or
+          credit-integration into an existing degree. This is the proving container:
+          the four-year journey opens only after the year on has held.
+        </p>
+      </div>
+
+      <div class="container-card">
+        <span class="container-tag">Container &middot; the four-year journey</span>
+        <h3>Four years &mdash; the full arc</h3>
+        <p>
+          Year one lays the foundation with the twelve habits. Years two and three follow
+          desire-led learning &mdash; live projects and developmental fields in which the
+          same habits are scored at growing distance and depth. Year four turns to the
+          world: a capstone carried to reality, and the accumulated learning mapped toward
+          an accreditable degree with partner universities &mdash; desire first, degree
+          second.
+        </p>
+      </div>
+
+      <p>
+        <strong>And the AI question:</strong> AI-assisted engineering &mdash; vibecoding,
+        agentic toolchains, digital fabrication &mdash; runs through both containers as a
+        flagship <em>application set</em>: a domain the modes of thinking support creating
+        in, not a discipline of its own. Co-Creation with AI and Idea to Life are the
+        habits; this decade's toolchain is merely their current instrument. When the tools
+        are replaced, the habits transfer.
+      </p>
+    </div>
+  </section>
+
+  <div class="ring-divider" aria-hidden="true">
+    <span class="ring-dot"></span><span class="ring-dot"></span><span class="ring-dot"></span><span class="ring-dot"></span><span class="ring-dot"></span>
+  </div>
+
+  <!-- Where it stands -->
+  <section id="stands">
+    <div class="shell">
+      <h2>Where This Stands</h2>
+      <p style="color: var(--grey); font-style: italic; margin-bottom: 1.5rem;">Deliberately early &mdash; a seed vocabulary, stated plainly</p>
+      <ul class="stands-list">
+        <li><strong>Real:</strong> the twelve-habit seed set (v0.2), derived from the EvoSattva triad and refined against the founder's first-hand experience of Minerva's habit system.</li>
+        <li><strong>Real:</strong> the dialectical meta-layer, grounded in Laske's published framework, with a daily practice format designed.</li>
+        <li><strong>Not yet:</strong> no cohort has practised this vocabulary. No rubrics are written. The assessment instrument mix remains undecided.</li>
+        <li><strong>Expected:</strong> the vocabulary will change. Names will be dropped, split, and added once real learners work with them &mdash; that is the point of calling it a seed set.</li>
+      </ul>
+      <div class="honest">
+        In the spirit of the <a href="https://evobiosys.org/pitch/evopaideia/" target="_blank" rel="noopener">pitch</a>:
+        this page makes no claim it cannot stand behind. The habits are a design,
+        not yet a result.
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="alt" id="newsletter">
+    <div class="shell">
+      <div class="newsletter">
+        <h2>Stay in touch</h2>
+        <p>Notes on developmental education, the habit vocabulary as it evolves, and the first containers as they open.<br>
+        No tracking. No upsell. EU-hosted.</p>
+        <form id="ep-nl-form" class="nl-form">
+          <input type="email" id="ep-nl-email" name="email" placeholder="your@email.com" required>
+          <button type="submit" class="btn btn-wine">Subscribe</button>
+        </form>
+        <small id="ep-nl-note">Double opt-in. Unsubscribe anytime. No tracking.</small>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="shell-wide footer-inner">
+      <div class="footer-brand">
+        <strong>EvoPaideia</strong>
+        <p>Developmental education for whole human beings.<br>
+        <small>Part of the <a href="https://evobiosys.org">EvoBioSys</a> constellation &mdash; Evo pillar.</small></p>
+      </div>
+      <div class="footer-links">
+        <h4>EvoPaideia</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/habits/">Habits of Mind</a></li>
+          <li><a href="https://evobiosys.org/pitch/evopaideia/">The pitch</a></li>
+          <li><a href="https://evobiosys.org">EvoBioSys</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var form = document.getElementById('ep-nl-form');
+      var note = document.getElementById('ep-nl-note');
+      if (!form) return;
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var email = document.getElementById('ep-nl-email').value.trim();
+        if (!email) return;
+        var btn = form.querySelector('button');
+        btn.disabled = true;
+        btn.textContent = 'Subscribing…';
+        fetch('https://subscriber.evopaideia.org/subscribe', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email: email, project: 'evopaideia', source: 'evopaideia.org/habits', gdpr: true })
+        })
+          .then(function (r) { return r.ok ? r.json() : Promise.reject(r.status); })
+          .then(function (data) {
+            document.getElementById('ep-nl-email').value = '';
+            btn.disabled = false;
+            btn.textContent = 'Subscribe';
+            note.style.color = 'var(--wine)';
+            note.style.fontSize = '1rem';
+            if (data && data.status === 'already_subscribed') {
+              note.textContent = "You're already on the list.";
+            } else {
+              note.textContent = 'Almost there — check your inbox to confirm.';
+            }
+          })
+          .catch(function () {
+            btn.disabled = false;
+            btn.textContent = 'Subscribe';
+            note.textContent = 'Subscription service is briefly unavailable — please try again later.';
+          });
+      });
+    })();
+  </script>
+</body>
+</html>
