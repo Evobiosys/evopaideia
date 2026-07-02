@@ -258,7 +258,7 @@
           <input type="email" id="ep-nl-email" name="email" placeholder="your@email.com" required>
           <button type="submit" class="btn btn-wine">Subscribe</button>
         </form>
-        <small id="ep-nl-note">Double opt-in. Unsubscribe anytime.</small>
+        <small id="ep-nl-note">Double opt-in. Unsubscribe anytime. No tracking.</small>
       </div>
     </div>
   </section>
@@ -297,21 +297,25 @@
         fetch('https://subscriber.evopaideia.org/subscribe', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ email: email, source: 'evopaideia.org', project: 'EvoPaideia' })
+          body: JSON.stringify({ email: email, project: 'evopaideia', source: 'evopaideia.org', gdpr: true })
         })
           .then(function (r) { return r.ok ? r.json() : Promise.reject(r.status); })
-          .then(function () {
+          .then(function (data) {
             document.getElementById('ep-nl-email').value = '';
             btn.disabled = false;
             btn.textContent = 'Subscribe';
-            note.textContent = 'Confirmed — check your inbox to complete your subscription.';
             note.style.color = 'var(--wine)';
             note.style.fontSize = '1rem';
+            if (data && data.status === 'already_subscribed') {
+              note.textContent = "You're already on the list.";
+            } else {
+              note.textContent = 'Almost there — check your inbox to confirm.';
+            }
           })
           .catch(function () {
             btn.disabled = false;
             btn.textContent = 'Subscribe';
-            note.textContent = 'Something went wrong — try again or email connect@evopaideia.org';
+            note.textContent = 'Subscription service is briefly unavailable — please try again later.';
           });
       });
     })();
